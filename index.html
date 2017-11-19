@@ -1,15 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="font-size: 100%;overflow-y: scroll;-webkit-tap-highlight-color: 
+rgba(0,0,0,0);-ms-text-size-adjust: 100%;-webkit-text-size-adjust: none">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content=" FILL ME IN ">
     <meta name="author" content=" FILL ME IN ">
     <title>Cameron Pittman: Portfolio</title>
+    <style>
+      a { color: #12C; }
+      a:visited { color: #61C; }
+      a:focus { outline: thin dotted; }
+      a:hover, a:active { color: #c00; outline: 0; }
+      img { border: 0; max-width: 100%; }
+      .content li { list-style-type: none; font-size: 1.1em;}
+      li img { float:left; padding-right: 1em; }
+      li p { font-size: 0.9em; font-style: italic; }
+      /* Smartphones (portrait) */
+      @media only screen and (max-width: 480px) {
+        body { font-size: 12px;}
+        header p { padding-left: 4.5em;}
+        }
+
+    </style>
 
     <!-- 嗯，web 字体对速度的影响有多大呢？测量一下吧 -->
-    <link async href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-    <link async href="css/style.css" rel="stylesheet" >
+    <link  href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    
     <link href="css/print.css" rel="stylesheet" media="print">
 
     <script>
@@ -24,19 +41,21 @@
     <script async src="js/perfmatters.js"></script>
   </head>
 
-  <body>
-    <header>
-      <a href="/"><img src="img/profilepic.jpg"></a>
-      <p>Cameron Pittman<br><span>Course Developer</span></p>
+  <body style="margin: 0; font-size: 14px; line-height: 1.61; font-weight: 400;font-family: 'Open Sans', sans-serif; color: #333; background: #fff;"> 
+    <header style="max-width: 45em; margin: 0 auto; padding: 0 0.5em; color: #C90B0B;">
+      <a href="/"><img style="border-radius: 40px; float: left;"src="img/profilepic.jpg"></a>
+      <p style="font-size:1.5em; font-weight: bold; padding-left: 4em">Cameron Pittman<br><span style="font-size: 0.8em; font-weight: normal">Course Developer</span></p>
     </header>
 
-    <div class="container">
-      <div class="hero">
-        <strong>I love web development!</strong> This is a template for a simple portfolio. I decided to use it to showcase a few Udacity courses I've taken and some teaching work, but you can use it to showcase any kind of project that you want the world to see :) <br> Contact me: me@email.com
+    <div class="container"  style="max-width: 45em; margin: 0 auto;">
+      <div class="hero" style="padding: 2em; background-color: #f8f8f8; font-size:1.2em;
+      border-bottom: 1px solid #ccc;
+      border-top: 1px solid #ccc">
+        <strong style="font-weight: bold;">I love web development!</strong> This is a template for a simple portfolio. I decided to use it to showcase a few Udacity courses I've taken and some teaching work, but you can use it to showcase any kind of project that you want the world to see :) <br> Contact me: me@email.com
       </div>
 
-      <div class="content">
-        <ul>
+      <div class="content" style="padding: 1em 1em">
+        <ul style="margin: 1em 0; padding: 0 0 0 20px;">
           <li>
             <img src="https://lh4.ggpht.com/kJEnfqhPvtm4m3EneSZ4fWYGS8lW4YNhEjk6zPkyrQaBUHc-2Y_ElDic99NHI0h-UBLXVbRCjFybFvrWxdk=s100">
             <a href="project-2048.html">Build Your Own 2048!</a>
@@ -63,8 +82,8 @@
         </ul>
       </div>
 
-      <footer>
-        <p>&copy; Web Performance 2014 <span id="crp-stats"></span></p>
+      <footer  style="max-width: 45em; margin: 0 auto;">
+        <p>&copy; Web Performance 2014 <span id="crp-stats" style=" float: right; font-style: italic"></span></p>
       </footer>
     </div>
   </body>
