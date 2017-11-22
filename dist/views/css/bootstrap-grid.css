@@ -15,8 +15,6 @@ img {
   vertical-align: middle;
 }
 .img-responsive {
-  background-color: transparent;
-  background-image: none;
   display: block;
   width: 100% \9;
   max-width: 100%;
